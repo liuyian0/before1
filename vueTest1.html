@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vueTest1</title>
+</head>
+<body>
+    <div id="div">
+        <div>姓名:{{name}}</div>
+        <div>班级:{{Grade}}</div>
+        <button onclick="hi()">打招呼</button>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script>
+    let ve =new Vue({
+        el:"#div",
+        data:{
+            name:"张三",
+            Grade:"大三"
+        },
+    methods:{
+        vueHi:function(){
+            console.log("姓名"+this.name)
+        }
+    }
+});
+    function hi(){
+        ve.vueHi();
+    }
+</script>
+</html>

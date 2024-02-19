@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form action="#">
+        用户名<input type="text" name="username"  maxlength="10" placeholder="请输入用户名"/><br>
+        密  码<input type="password" name="password" maxlength="10"/><br>
+        <!-- label单选框中点击文本也能选中+ -->
+        性别<input type="radio" name="gender" id="male"><label for="male"> 男</label><input type="radio" name="gender">女<br>
+        地址<select name="city" multiple>
+            <option value="sh">上海</option>
+            <option value="sh">河南</option>
+            <option value="sh">北京</option>
+        </select><br>
+        爱好<br><input type="checkbox" checked>登山<br>
+        <input type="checkbox" disabled>游泳<br>
+        <input type="checkbox">滑雪<br>
+        上传图片作为头像<input type="file"><br>
+        <input type="submit" value="注册"><br>
+        <input type="reset" value="重置"><br>
+        <input type="button" value="登录">
+
+        <p><input type="date"><br>
+            <input type="time"><br>
+        邮箱<input type="email"><br>
+        <!-- 邮箱格式不正确会提示 -->
+        <input type="search">
+        <!-- 带小x -->
+    </form>
+</body>
+</html>

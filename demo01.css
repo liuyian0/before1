@@ -1,0 +1,13 @@
+#two{
+    color: yellow;
+    font-size: 100px;
+    border: 1px solid red;
+}
+#three{
+    color: rgb(14, 14, 7);
+    font-size: 100px;
+    border: 1px solid red;
+}
+.center{
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on</title>
+</head>
+<body>
+    <div id="div">
+        <div>{{name}}</div>
+        <button onclick="fn()">老方法</button>
+        <button v-on:click="change()">单击</button>
+        <button v-on:dblclick="change()">双击</button>
+        <button @click="change()">简写</button>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script>
+    let ve = new Vue({
+        el:"#div",
+        data:{
+            name:"张三"
+        },
+        methods:{
+            change(){
+                this.name="zhangsan"
+            }
+        }
+    });
+    function fn(){
+        ve.change();
+    }
+</script>
+</html>

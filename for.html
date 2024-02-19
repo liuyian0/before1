@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+<body>
+    <div id="div">
+        <ul>
+            <li v-for="element in names">
+                {{element}}
+            </li>
+            <li v-for="stu in student">
+                {{stu}}
+            </li>
+            <li v-for="(element,index) in names">
+                元素:{{element}},索引:{{index}}
+            </li>
+            <li v-for="(element,index) in student">
+                元素:{{element}},索引:{{index}}
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script>
+    new Vue({
+        el:"#div",
+        data:{
+            names:["张三","赵四","王老五"],
+            student:{
+                name:"张三",
+                age:18
+            }
+        }
+    })
+</script>
+</html>

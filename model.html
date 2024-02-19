@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model</title>
+</head>
+<body>
+    <div id="div">
+        <form autocomplete="off">
+            姓名（双向绑定）<input type="text" name="username" v-model="username"><br>
+            年龄<input type="number" name="age" v-model="age"><br>
+            性别<input type="text" name="gender" v-model="gender">
+        </form>
+        {{username}}<hr>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script>
+    new Vue({
+        el:"#div",
+        data:{
+            username:"张三",
+            age:18,
+            gender:"男"
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json格式</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //格式1：
+        let a1 = {"username":"张三","age":18,"gender":"男"};
+        console.log(a1.username);
+        //格式二：
+        let a2 = [{"username":"张三","age":18,"gender":"男"},{"username":"赵四","age":19,"gender":"男"}];
+        console.log(a2[1].username);
+        //格式三：
+        let a3 = {"company":"itheima","person":[{"username":"张三","age":18,"gender":"男"},{"username":"赵四","age":19,"gender":"男"}]};
+        console.log(a3.person[1].gender);
+    </script>
+</body>
+</html>

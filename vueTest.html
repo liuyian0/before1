@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vueTest</title>
+</head>
+<body>
+    <div id="myDiv">
+        div1
+        {{msg}}
+    </div>
+</body>
+<!-- 导入vue的js库 -->
+<script src="vue.js"></script>
+<script>
+    //创建vue对象
+    let ve = new Vue({
+        el:"#myDiv",
+        data:{
+            msg:"黑马程序员"
+        }
+    });
+</script>
+</html>
